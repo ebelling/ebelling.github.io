@@ -22,6 +22,12 @@ p {
   z-index: 1000;
 }
 
+#screenWidth {
+  position: relative;
+  margin-left: inherit;
+  font-size: 12px;
+}
+
 .nav {
   margin: 10px;
   position: fixed;

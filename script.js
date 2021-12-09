@@ -1,5 +1,13 @@
 //navigation//
 
+//screen width
+
+var sWidth = window.innerWidth;
+window.addEventListener('resize', reportWindowWidth());
+function reportWindowWidth(){
+  document.getElementById("currentWidth").innerHTML = sWidth + "px";
+}
+
 //toggle fog visibility//
 
 function toggleFog () {
