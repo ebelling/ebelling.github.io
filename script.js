@@ -11,19 +11,23 @@ function toggleFog () {
 }
 
 //toggle border visibility
+const borderTags = document.querySelectorAll(".scene"); //QUERYSELECTORALL
 
 function toggleBorder () {
-  const borderTog = document.getElementById("one"); //QUERYSELECTORALL
-    if (borderTog.classList.contains("border")){
-      borderTog.style.border="0px dotted red";
-      borderTog.classList.remove("border");
+  borderTags.forEach ( function (bor) {
+    //borderz.style.color= "blue";
+
+    if (bor.classList.contains("border")){
+      bor.style.border="0px dotted red";
+      bor.classList.remove("border");
       console.log("Border deactivated!");
     }
     else {
-      borderTog.style.border="1px dotted red";
-      borderTog.classList.add("border");
+      bor.style.border="1px dotted red";
+      bor.classList.add("border");
       console.log("Border activated!");
     }
+  })
 }
 
 // parallaxe
