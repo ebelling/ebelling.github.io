@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="Viking-Normal.woff2" as="font" type="font/woff2" crossorigin>
+    <title>THORS REISE</title>
+  </head>
+  <header>
+    <figure class="fog hide" id="fogLeft"></figure>
+    <figure class="fog hide" id="fogRight"></figure>
+  <div class="nav">
+    <a href="#one">1</a>
+    <a href="#two">2</a>
+    <a href="#three">3</a>
+    <a href="#four">4</a>
+    <a href="#five">5</a>
+    <a href="#six">6</a>
+    <a href="#seven">7</a>
+    <a href="#eight">8</a>
+    <a href="#nine">9</a>
+    <a href="#ten">10</a>
+    <a href="#eleven">11</a>
+    <a href="#twelve">12</a>
+    <a href="#thirteen">13</a>
+    <a href="#fourteen">14</a>
+    <a href="#fifteen">15</a>
+    <a href="#sixteen">16</a>
+    <a href="#seventeen">17</a>
+    <a href="#eighteen">18</a>
+    <a href="#nineteen">19</a>
+    <a href="#twenty">20</a>
+    <a href="#twentyone">21</a>
+  </div>
+  <button id="toggleFog" onclick="toggleFog()">Fog on/off</button>
+  <button id="toggleBorder" onclick="toggleBorder()">Borders on/off</button>
+  </header>
+  <body>
+    <!-- aufbau wrapper-system -->
+     <div class="wrapper" onscroll="parallax()" id="wrapper">
+       <figure class="background"></figure>
+       <figure class="middleground hide"></figure>
+       <figure class="front"></figure>
+       <figure class="character show innerShadow" id="thor"></figure>
+       <figure class="shadow thor"></figure>
+       <div class="cloud" id="clOne"></div>
+       <div class="cloud" id="clTwo"></div>
+       <div class="cloud" id="clThree"></div>
+       <div class="cloud" id="clFour"></div>
+       <div class="cloud" id="clFive"></div>
+       <div class="cloud" id="clSix"></div>
+       <figure class="character hide" id="loki"></figure>
+       <div class="scene border" id="one">
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <!--
+          lässt sich nicht mit overflow: hidden; verstecken und ermöglicht so vertikales scrollen
+
+         <figure class="hill" id="hill1"></figure>
+         <figure class="hill" id="hill2"></figure>
+
+       -->
+         <figure class="sun"></figure>
+         <h1>
+           THORS <br>REISE
+         </h1>
+        <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="two"><p>2</p>
+         <div class="teller">
+           <p>Die Sonne näherte sich bereits dem Horizont als Thor und Loki in der Ferne eine kleine Hütte erblickten. Sie waren hungrig und ihre Zugtiere brauchten eine Pause...</p>
+         </div>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="three"><p>3</p>
+         <div class="teller" id="altTeller">
+           <p>Die Sonne näherte sich bereits dem Horizont als Thor und Loki in der Ferne eine kleine Hütte erblickten. Sie waren hungrig und ihre Zugtiere brauchten eine Pause...</p>
+         </div>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="four"><p>4</p>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="five"><p>5</p>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="six"><p>6</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="seven"><p>7</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="eigth"><p>8</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="nine"><p>9</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="ten"><p>10</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="eleven"><p>11</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="twelve"><p>12</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="thirteen"><p>13</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="fourteen"><p>14</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="fifteen"><p>15</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene" id="sixteen"><p>16</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="seventeen"><p>17</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="eighteen"><p>18</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="nineteen"><p>19</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="twenty"><p>20</p>
+         <figure class="floor"></figure>
+       </div>
+       <div class="scene border" id="twentyone"><p>21</p>
+         <figure class="floor"></figure>
+       </div>
+     </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="rellax.js"></script>
+  <script>
+  // Adding horizantal parallax scrolling
+  var rellax = new Rellax('.rellax', {
+    // Activate horizantal scrolling
+    // Turned off by default
+    horizontal: true
+    //Deactivate vertical scrolling
+    //vertical: false
+  });
+  </script>
+</html>
