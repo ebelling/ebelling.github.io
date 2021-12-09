@@ -1,0 +1,28 @@
+generell
+//MEDIA QUERY
+//scroll zähler sh. https://codepen.io/szyszak/pen/vyabMR
+ /alt. klaus https://codepen.io/klausneuburg/pen/oNeQPGa
+//parallaxe https://codepen.io/ulyzses/pen/yLyoYZm
+
+startseite
+//titel in mitte mit font
+//sub mit interactive scrollytelling verweis
+//anlern icons/animation
+//erklärung gunst-system
+//background 1
+//titelmusik?
+//for smoother movement use arrowkeys or hold in left/right half
+
+1.szene:
+//background 1
+//speak-ANIMATION
+//notice-ANIMATION
+
+2.szene:
+
+3.szene:
+
+4.szene:
+
+nacht:
+#191e21
