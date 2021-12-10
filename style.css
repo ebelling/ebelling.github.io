@@ -1,4 +1,11 @@
 /* GENERAL */
+:root {
+  --thor-size: 5vh;
+  --night-color: ;
+  --thor-color: ;
+  --loki-color: ;
+  --thjalfi-color: ;
+}
 
 * {
   top: 0px;
@@ -152,6 +159,7 @@ p {
   z-index: -2;
   position: fixed;
   top: 64vh;
+  left: 0;
 }
 
 .character {
