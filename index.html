@@ -38,8 +38,11 @@
   </header>
   <body>
     <!-- aufbau wrapper-system -->
-     <div class="wrapper" onscroll="parallax()" id="wrapper">
+     <div class="wrapper" id="wrapper">
        <figure class="background"></figure>
+       <!-- <div class="horizon">
+         <figure class="alps"></figure>
+       </div> -->
        <figure class="middleground hide"></figure>
        <figure class="front"></figure>
        <figure class="character show innerShadow" id="thor"></figure>
@@ -52,16 +55,10 @@
        <div class="cloud" id="clSix"></div>
        <figure class="character hide" id="loki"></figure>
        <div class="scene border" id="one">
-         <img src="assets/environment/berge1.png" class="berge rellax" data-rellax-speed="-10" id="mountain1"></img>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
-         <!--
-          lässt sich nicht mit overflow: hidden; verstecken und ermöglicht so vertikales scrollen
-
-         <figure class="hill" id="hill1"></figure>
-         <figure class="hill" id="hill2"></figure>
-
-       -->
+         <img src="assets/environment/berge1_gray.png" class="berge rellax" data-rellax-speed="-10" id="mountain1"></img>
+         <img src="assets/environment/berge2_grey.png" class="berge rellax" data-rellax-speed="-10" id="mountain2"></figure>
+         <figure class="hill rellax" data-rellax-speed="-5" id="hill1"></figure>
+         <figure class="hill rellax" data-rellax-speed="-5" id="hill2"></figure>
          <figure class="sun"></figure>
          <h1>
            THORS <br>REISE
@@ -72,30 +69,30 @@
          <div class="teller">
            <p>Die Sonne näherte sich bereits dem Horizont als Thor und Loki in der Ferne eine kleine Hütte erblickten. Sie waren hungrig und ihre Zugtiere brauchten eine Pause...</p>
          </div>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <!-- <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
          <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure> -->
          <figure class="floor"></figure>
        </div>
        <div class="scene border" id="three"><p>3</p>
          <div class="teller" id="altTeller">
            <p>Die Sonne näherte sich bereits dem Horizont als Thor und Loki in der Ferne eine kleine Hütte erblickten. Sie waren hungrig und ihre Zugtiere brauchten eine Pause...</p>
          </div>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <!-- <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
          <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure> -->
          <figure class="floor"></figure>
        </div>
        <div class="scene border" id="four"><p>4</p>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <!-- <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
          <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure> -->
          <figure class="floor"></figure>
        </div>
        <div class="scene border" id="five"><p>5</p>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
+         <!-- <figure class="mountain rellax" data-rellax-speed="-10" id="mountain1"></figure>
          <figure class="mountain rellax" data-rellax-speed="-10" id="mountain2"></figure>
-         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure>
+         <figure class="mountain rellax" data-rellax-speed="-10" id="mountain3"></figure> -->
          <figure class="floor"></figure>
        </div>
        <div class="scene border" id="six"><p>6</p>
@@ -159,6 +156,10 @@
     horizontal: true
     //Deactivate vertical scrolling
     //vertical: false
+
+  });
+  var rellax = new Rellax('.rellax', {
+    wrapper: '.wrapper'
   });
   </script>
 </html>

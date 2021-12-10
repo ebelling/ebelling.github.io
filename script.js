@@ -37,12 +37,3 @@ function toggleBorder () {
     }
   })
 }
-
-// parallaxe
-const wrapperTag = document.getElementById("wrapper");
-
-function parallax () {
-  var sLeft = wrapperTag.scrollLeft;
-  console.log(sLeft);
-  console.log("hurra!");
-}
